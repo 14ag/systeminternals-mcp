@@ -22,19 +22,21 @@ else:
     logging.basicConfig(level=logging.INFO)
 
 
-def load_config(path: str = "config.txt") -> dict:
+def load_config(path: str = "config.ini") -> dict:
+    import configparser
+
     cfg = {}
     p = Path(path)
     if not p.exists():
-        LOG.warning("config.txt not found; using defaults")
+        LOG.warning("config.ini not found; using defaults")
         return cfg
-    for line in p.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        if "=" in line:
-            k, v = line.split("=", 1)
-            cfg[k.strip()] = v.strip()
+    parser = configparser.ConfigParser()
+    parser.read(p)
+    # read server section
+    if parser.has_section("server"):
+        cfg["LOG_LEVEL"] = parser.get("server", "log_level", fallback="INFO")
+        cfg["TIMEOUT"] = parser.get("server", "timeout", fallback="30")
+        cfg["ALLOW_DESTRUCTIVE"] = parser.get("server", "allow_destructive", fallback="false")
     return cfg
 
 
@@ -117,7 +119,7 @@ async def run_tool_by_name(name: str, args: str, cfg: dict):
                 # proceed
             else:
                 LOG.warning("blocked destructive tool invocation for %s (non-interactive)", name)
-                return {"error": "destructive_tool_blocked", "detail": "Tool is destructive. Run with `--confirm` or enable ALLOW_DESTRUCTIVE=1 in config.txt."}
+                return {"error": "destructive_tool_blocked", "detail": "Tool is destructive. Run with `--confirm` or enable allow_destructive=true in config.ini."}
         except Exception:
             return {"error": "destructive_tool_blocked", "detail": "Unable to prompt for confirmation. Use --confirm or set ALLOW_DESTRUCTIVE=1."}
 

@@ -22,7 +22,7 @@ def make_tool_fn(mcp: FastMCP, entry: dict, cfg: dict):
     return _tool
 
 
-def build_mcp(cfg_path: str = "config.txt", bins_path: str = "binaries.json") -> FastMCP:
+def build_mcp(cfg_path: str = "config.ini", bins_path: str = "binaries.json") -> FastMCP:
     cfg = load_config(cfg_path)
     bins = load_binaries(bins_path)
 
