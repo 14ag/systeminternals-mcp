@@ -1,0 +1,1916 @@
+[
+  {
+    "name": "cports",
+    "exe": "binaries\\nirsoft\\cports.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility cports",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "dllexp",
+    "exe": "binaries\\nirsoft\\dllexp.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility dllexp",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "DriverView",
+    "exe": "binaries\\nirsoft\\DriverView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility DriverView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "exiftool",
+    "exe": "binaries\\nirsoft\\exiftool.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility exiftool",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "FileTypesMan",
+    "exe": "binaries\\nirsoft\\FileTypesMan.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility FileTypesMan",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "GDIView",
+    "exe": "binaries\\nirsoft\\GDIView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility GDIView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "HeapMemView",
+    "exe": "binaries\\nirsoft\\HeapMemView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility HeapMemView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "mp3info",
+    "exe": "binaries\\nirsoft\\mp3info.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility mp3info",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "NetworkTrafficView",
+    "exe": "binaries\\nirsoft\\NetworkTrafficView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility NetworkTrafficView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "OpenedFilesView",
+    "exe": "binaries\\nirsoft\\OpenedFilesView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility OpenedFilesView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ProcessActivityView",
+    "exe": "binaries\\nirsoft\\ProcessActivityView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility ProcessActivityView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ProcessThreadsView",
+    "exe": "binaries\\nirsoft\\ProcessThreadsView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility ProcessThreadsView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RegDllView",
+    "exe": "binaries\\nirsoft\\RegDllView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility RegDllView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RegFromApp",
+    "exe": "binaries\\nirsoft\\RegFromApp.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility RegFromApp",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RegScanner",
+    "exe": "binaries\\nirsoft\\RegScanner.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility RegScanner",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RunAsDate",
+    "exe": "binaries\\nirsoft\\RunAsDate.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility RunAsDate",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "shexview",
+    "exe": "binaries\\nirsoft\\shexview.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility shexview",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "shmnview",
+    "exe": "binaries\\nirsoft\\shmnview.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility shmnview",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "SpecialFoldersView",
+    "exe": "binaries\\nirsoft\\SpecialFoldersView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility SpecialFoldersView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "sysexp",
+    "exe": "binaries\\nirsoft\\sysexp.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility sysexp",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "TPad",
+    "exe": "binaries\\nirsoft\\TPad.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility TPad",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "URLProtocolView",
+    "exe": "binaries\\nirsoft\\URLProtocolView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility URLProtocolView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "volumouse",
+    "exe": "binaries\\nirsoft\\volumouse.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility volumouse",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "WebCookiesSniffer",
+    "exe": "binaries\\nirsoft\\WebCookiesSniffer.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility WebCookiesSniffer",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "WebSiteSniffer",
+    "exe": "binaries\\nirsoft\\WebSiteSniffer.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility WebSiteSniffer",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "WirelessKeyView",
+    "exe": "binaries\\nirsoft\\WirelessKeyView.exe",
+    "category": "nirsoft",
+    "description": "nirsoft utility WirelessKeyView",
+    "tags": [
+      "nirsoft"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "accesschk",
+    "exe": "binaries\\systeminternals\\accesschk.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility accesschk",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "accesschk64",
+    "exe": "binaries\\systeminternals\\accesschk64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility accesschk64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "AccessEnum",
+    "exe": "binaries\\systeminternals\\AccessEnum.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility AccessEnum",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ADExplorer",
+    "exe": "binaries\\systeminternals\\ADExplorer.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ADExplorer",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ADExplorer64",
+    "exe": "binaries\\systeminternals\\ADExplorer64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ADExplorer64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ADInsight",
+    "exe": "binaries\\systeminternals\\ADInsight.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ADInsight",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ADInsight64",
+    "exe": "binaries\\systeminternals\\ADInsight64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ADInsight64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "adrestore",
+    "exe": "binaries\\systeminternals\\adrestore.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility adrestore",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "adrestore64",
+    "exe": "binaries\\systeminternals\\adrestore64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility adrestore64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Autologon",
+    "exe": "binaries\\systeminternals\\Autologon.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Autologon",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Autologon64",
+    "exe": "binaries\\systeminternals\\Autologon64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Autologon64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Autoruns",
+    "exe": "binaries\\systeminternals\\Autoruns.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Autoruns",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Autoruns64",
+    "exe": "binaries\\systeminternals\\Autoruns64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Autoruns64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "autorunsc",
+    "exe": "binaries\\systeminternals\\autorunsc.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility autorunsc",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "autorunsc64",
+    "exe": "binaries\\systeminternals\\autorunsc64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility autorunsc64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Bginfo",
+    "exe": "binaries\\systeminternals\\Bginfo.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Bginfo",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Bginfo64",
+    "exe": "binaries\\systeminternals\\Bginfo64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Bginfo64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Cacheset",
+    "exe": "binaries\\systeminternals\\Cacheset.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Cacheset",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Cacheset64",
+    "exe": "binaries\\systeminternals\\Cacheset64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Cacheset64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Clockres",
+    "exe": "binaries\\systeminternals\\Clockres.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Clockres",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Clockres64",
+    "exe": "binaries\\systeminternals\\Clockres64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Clockres64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Contig",
+    "exe": "binaries\\systeminternals\\Contig.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Contig",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Contig64",
+    "exe": "binaries\\systeminternals\\Contig64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Contig64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Coreinfo",
+    "exe": "binaries\\systeminternals\\Coreinfo.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Coreinfo",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Coreinfo64",
+    "exe": "binaries\\systeminternals\\Coreinfo64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Coreinfo64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "CPUSTRES",
+    "exe": "binaries\\systeminternals\\CPUSTRES.EXE",
+    "category": "sysinternals",
+    "description": "sysinternals utility CPUSTRES",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "CPUSTRES64",
+    "exe": "binaries\\systeminternals\\CPUSTRES64.EXE",
+    "category": "sysinternals",
+    "description": "sysinternals utility CPUSTRES64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ctrl2cap",
+    "exe": "binaries\\systeminternals\\ctrl2cap.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ctrl2cap",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Dbgview",
+    "exe": "binaries\\systeminternals\\Dbgview.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Dbgview",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "dbgview64",
+    "exe": "binaries\\systeminternals\\dbgview64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility dbgview64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Desktops",
+    "exe": "binaries\\systeminternals\\Desktops.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Desktops",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Desktops64",
+    "exe": "binaries\\systeminternals\\Desktops64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Desktops64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "disk2vhd",
+    "exe": "binaries\\systeminternals\\disk2vhd.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility disk2vhd",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "disk2vhd64",
+    "exe": "binaries\\systeminternals\\disk2vhd64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility disk2vhd64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "diskext",
+    "exe": "binaries\\systeminternals\\diskext.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility diskext",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "diskext64",
+    "exe": "binaries\\systeminternals\\diskext64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility diskext64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Diskmon",
+    "exe": "binaries\\systeminternals\\Diskmon.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Diskmon",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Diskmon64",
+    "exe": "binaries\\systeminternals\\Diskmon64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Diskmon64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "DiskView",
+    "exe": "binaries\\systeminternals\\DiskView.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility DiskView",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "DiskView64",
+    "exe": "binaries\\systeminternals\\DiskView64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility DiskView64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "du",
+    "exe": "binaries\\systeminternals\\du.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility du",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "du64",
+    "exe": "binaries\\systeminternals\\du64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility du64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "efsdump",
+    "exe": "binaries\\systeminternals\\efsdump.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility efsdump",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "FindLinks",
+    "exe": "binaries\\systeminternals\\FindLinks.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility FindLinks",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "FindLinks64",
+    "exe": "binaries\\systeminternals\\FindLinks64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility FindLinks64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "handle",
+    "exe": "binaries\\systeminternals\\handle.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility handle",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "handle64",
+    "exe": "binaries\\systeminternals\\handle64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility handle64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "hex2dec",
+    "exe": "binaries\\systeminternals\\hex2dec.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility hex2dec",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "hex2dec64",
+    "exe": "binaries\\systeminternals\\hex2dec64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility hex2dec64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "junction",
+    "exe": "binaries\\systeminternals\\junction.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility junction",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "junction64",
+    "exe": "binaries\\systeminternals\\junction64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility junction64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ldmdump",
+    "exe": "binaries\\systeminternals\\ldmdump.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ldmdump",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Listdlls",
+    "exe": "binaries\\systeminternals\\Listdlls.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Listdlls",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "livekd",
+    "exe": "binaries\\systeminternals\\livekd.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility livekd",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "livekd64",
+    "exe": "binaries\\systeminternals\\livekd64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility livekd64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "LoadOrd",
+    "exe": "binaries\\systeminternals\\LoadOrd.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility LoadOrd",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "LoadOrd64",
+    "exe": "binaries\\systeminternals\\LoadOrd64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility LoadOrd64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "LoadOrdC",
+    "exe": "binaries\\systeminternals\\LoadOrdC.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility LoadOrdC",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "LoadOrdC64",
+    "exe": "binaries\\systeminternals\\LoadOrdC64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility LoadOrdC64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "logonsessions",
+    "exe": "binaries\\systeminternals\\logonsessions.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility logonsessions",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "logonsessions64",
+    "exe": "binaries\\systeminternals\\logonsessions64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility logonsessions64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "movefile",
+    "exe": "binaries\\systeminternals\\movefile.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility movefile",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "movefile64",
+    "exe": "binaries\\systeminternals\\movefile64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility movefile64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "notmyfault",
+    "exe": "binaries\\systeminternals\\notmyfault.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility notmyfault",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "notmyfault64",
+    "exe": "binaries\\systeminternals\\notmyfault64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility notmyfault64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "notmyfaultc",
+    "exe": "binaries\\systeminternals\\notmyfaultc.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility notmyfaultc",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "notmyfaultc64",
+    "exe": "binaries\\systeminternals\\notmyfaultc64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility notmyfaultc64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ntfsinfo",
+    "exe": "binaries\\systeminternals\\ntfsinfo.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ntfsinfo",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ntfsinfo64",
+    "exe": "binaries\\systeminternals\\ntfsinfo64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ntfsinfo64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pagedfrg",
+    "exe": "binaries\\systeminternals\\pagedfrg.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pagedfrg",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pendmoves",
+    "exe": "binaries\\systeminternals\\pendmoves.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pendmoves",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pendmoves64",
+    "exe": "binaries\\systeminternals\\pendmoves64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pendmoves64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pipelist",
+    "exe": "binaries\\systeminternals\\pipelist.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pipelist",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pipelist64",
+    "exe": "binaries\\systeminternals\\pipelist64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pipelist64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "portmon",
+    "exe": "binaries\\systeminternals\\portmon.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility portmon",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "procdump",
+    "exe": "binaries\\systeminternals\\procdump.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility procdump",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "procdump64",
+    "exe": "binaries\\systeminternals\\procdump64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility procdump64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "procexp",
+    "exe": "binaries\\systeminternals\\procexp.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility procexp",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "procexp64",
+    "exe": "binaries\\systeminternals\\procexp64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility procexp64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Procmon",
+    "exe": "binaries\\systeminternals\\Procmon.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Procmon",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Procmon64",
+    "exe": "binaries\\systeminternals\\Procmon64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Procmon64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsExec",
+    "exe": "binaries\\systeminternals\\PsExec.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsExec",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": true,
+    "safe_flags": []
+  },
+  {
+    "name": "PsExec64",
+    "exe": "binaries\\systeminternals\\PsExec64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsExec64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": true,
+    "safe_flags": []
+  },
+  {
+    "name": "psfile",
+    "exe": "binaries\\systeminternals\\psfile.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility psfile",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "psfile64",
+    "exe": "binaries\\systeminternals\\psfile64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility psfile64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsGetsid",
+    "exe": "binaries\\systeminternals\\PsGetsid.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsGetsid",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsGetsid64",
+    "exe": "binaries\\systeminternals\\PsGetsid64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsGetsid64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsInfo",
+    "exe": "binaries\\systeminternals\\PsInfo.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsInfo",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsInfo64",
+    "exe": "binaries\\systeminternals\\PsInfo64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsInfo64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pskill",
+    "exe": "binaries\\systeminternals\\pskill.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pskill",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": true,
+    "safe_flags": []
+  },
+  {
+    "name": "pskill64",
+    "exe": "binaries\\systeminternals\\pskill64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pskill64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": true,
+    "safe_flags": []
+  },
+  {
+    "name": "pslist",
+    "exe": "binaries\\systeminternals\\pslist.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pslist",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pslist64",
+    "exe": "binaries\\systeminternals\\pslist64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pslist64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsLoggedon",
+    "exe": "binaries\\systeminternals\\PsLoggedon.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsLoggedon",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsLoggedon64",
+    "exe": "binaries\\systeminternals\\PsLoggedon64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsLoggedon64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "psloglist",
+    "exe": "binaries\\systeminternals\\psloglist.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility psloglist",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "psloglist64",
+    "exe": "binaries\\systeminternals\\psloglist64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility psloglist64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pspasswd",
+    "exe": "binaries\\systeminternals\\pspasswd.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pspasswd",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pspasswd64",
+    "exe": "binaries\\systeminternals\\pspasswd64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pspasswd64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "psping",
+    "exe": "binaries\\systeminternals\\psping.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility psping",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "psping64",
+    "exe": "binaries\\systeminternals\\psping64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility psping64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsService",
+    "exe": "binaries\\systeminternals\\PsService.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsService",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "PsService64",
+    "exe": "binaries\\systeminternals\\PsService64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility PsService64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "psshutdown",
+    "exe": "binaries\\systeminternals\\psshutdown.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility psshutdown",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": true,
+    "safe_flags": []
+  },
+  {
+    "name": "psshutdown64",
+    "exe": "binaries\\systeminternals\\psshutdown64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility psshutdown64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": true,
+    "safe_flags": []
+  },
+  {
+    "name": "pssuspend",
+    "exe": "binaries\\systeminternals\\pssuspend.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pssuspend",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "pssuspend64",
+    "exe": "binaries\\systeminternals\\pssuspend64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility pssuspend64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RAMMap",
+    "exe": "binaries\\systeminternals\\RAMMap.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility RAMMap",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RAMMap64",
+    "exe": "binaries\\systeminternals\\RAMMap64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility RAMMap64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RDCMan",
+    "exe": "binaries\\systeminternals\\RDCMan.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility RDCMan",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RegDelNull",
+    "exe": "binaries\\systeminternals\\RegDelNull.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility RegDelNull",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RegDelNull64",
+    "exe": "binaries\\systeminternals\\RegDelNull64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility RegDelNull64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "regjump",
+    "exe": "binaries\\systeminternals\\regjump.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility regjump",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "RootkitRevealer",
+    "exe": "binaries\\systeminternals\\RootkitRevealer.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility RootkitRevealer",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ru",
+    "exe": "binaries\\systeminternals\\ru.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ru",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ru64",
+    "exe": "binaries\\systeminternals\\ru64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ru64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "sdelete",
+    "exe": "binaries\\systeminternals\\sdelete.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility sdelete",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": true,
+    "safe_flags": []
+  },
+  {
+    "name": "sdelete64",
+    "exe": "binaries\\systeminternals\\sdelete64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility sdelete64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": true,
+    "safe_flags": []
+  },
+  {
+    "name": "ShareEnum",
+    "exe": "binaries\\systeminternals\\ShareEnum.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ShareEnum",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ShareEnum64",
+    "exe": "binaries\\systeminternals\\ShareEnum64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ShareEnum64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ShellRunas",
+    "exe": "binaries\\systeminternals\\ShellRunas.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ShellRunas",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "sigcheck",
+    "exe": "binaries\\systeminternals\\sigcheck.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility sigcheck",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "sigcheck64",
+    "exe": "binaries\\systeminternals\\sigcheck64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility sigcheck64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "streams",
+    "exe": "binaries\\systeminternals\\streams.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility streams",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "streams64",
+    "exe": "binaries\\systeminternals\\streams64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility streams64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "strings",
+    "exe": "binaries\\systeminternals\\strings.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility strings",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "strings64",
+    "exe": "binaries\\systeminternals\\strings64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility strings64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "sync",
+    "exe": "binaries\\systeminternals\\sync.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility sync",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "sync64",
+    "exe": "binaries\\systeminternals\\sync64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility sync64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Sysmon",
+    "exe": "binaries\\systeminternals\\Sysmon.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Sysmon",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Sysmon64",
+    "exe": "binaries\\systeminternals\\Sysmon64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Sysmon64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "tcpvcon",
+    "exe": "binaries\\systeminternals\\tcpvcon.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility tcpvcon",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "tcpvcon64",
+    "exe": "binaries\\systeminternals\\tcpvcon64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility tcpvcon64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "tcpview",
+    "exe": "binaries\\systeminternals\\tcpview.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility tcpview",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "tcpview64",
+    "exe": "binaries\\systeminternals\\tcpview64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility tcpview64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Testlimit",
+    "exe": "binaries\\systeminternals\\Testlimit.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Testlimit",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Testlimit64",
+    "exe": "binaries\\systeminternals\\Testlimit64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Testlimit64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "URLProtocolView",
+    "exe": "binaries\\systeminternals\\URLProtocolView.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility URLProtocolView",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "vmmap",
+    "exe": "binaries\\systeminternals\\vmmap.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility vmmap",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "vmmap64",
+    "exe": "binaries\\systeminternals\\vmmap64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility vmmap64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Volumeid",
+    "exe": "binaries\\systeminternals\\Volumeid.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Volumeid",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Volumeid64",
+    "exe": "binaries\\systeminternals\\Volumeid64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Volumeid64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "whois",
+    "exe": "binaries\\systeminternals\\whois.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility whois",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "whois64",
+    "exe": "binaries\\systeminternals\\whois64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility whois64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Winobj",
+    "exe": "binaries\\systeminternals\\Winobj.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Winobj",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "Winobj64",
+    "exe": "binaries\\systeminternals\\Winobj64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility Winobj64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ZoomIt",
+    "exe": "binaries\\systeminternals\\ZoomIt.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ZoomIt",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  },
+  {
+    "name": "ZoomIt64",
+    "exe": "binaries\\systeminternals\\ZoomIt64.exe",
+    "category": "sysinternals",
+    "description": "sysinternals utility ZoomIt64",
+    "tags": [
+      "sysinternals"
+    ],
+    "destructive": false,
+    "safe_flags": []
+  }
+]

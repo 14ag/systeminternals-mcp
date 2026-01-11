@@ -1,0 +1,6 @@
+{
+  "allowed_flags": ["-p", "-s", "-q"],
+  "allow_free_args": false,
+  "description": "Secure delete — destructive. Additional confirmation required.",
+  "destructive": true
+}

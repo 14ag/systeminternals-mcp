@@ -1,0 +1,5 @@
+{
+  "allowed_flags": ["/stext", "/sxml", "/scomma", "/stsv", "/stab", "/shtml"],
+  "allow_free_args": false,
+  "description": "CurrPorts output flags"
+}

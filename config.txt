@@ -1,0 +1,6 @@
+# Sample config file for systeminternals-mcp
+PATH_X64=C:\binaries\x64
+PATH_SYS=C:\binaries\systeminternals
+LOG_LEVEL=INFO
+TIMEOUT=30
+ALLOW_DESTRUCTIVE=0

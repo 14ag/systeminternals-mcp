@@ -1,0 +1,5 @@
+{
+  "allowed_flags": ["-x", "-d", "-s", "-t"],
+  "allow_free_args": true,
+  "description": "pslist accepts simple options and optional process names/PIDs"
+}
