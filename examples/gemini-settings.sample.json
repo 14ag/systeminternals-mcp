@@ -1,20 +1,20 @@
 {
   "mcpServers": {
     "systeminternals-mcp": {
-      "command": "python",
+      "command": "C:\\Users\\philip\\sauce\\systeminternals-mcp\\.venv\\Scripts\\python.exe",
       "args": [
-        "C:\\path\\to\\server_mcp.py"
+        "C:\\Users\\philip\\sauce\\systeminternals-mcp\\server_mcp.py"
       ],
-      "cwd": "C:\\path\\to\\systeminternals-mcp\\folder"
+      "cwd": "C:\\Users\\philip\\sauce\\systeminternals-mcp"
     },
 
     "systeminternals-mcp-demo": {
-      "command": "python",
+      "command": "C:\\Users\\philip\\sauce\\systeminternals-mcp\\.venv\\Scripts\\python.exe",
       "args": [
-        "C:\\path\\to\\server.py",
+        "C:\\Users\\philip\\sauce\\systeminternals-mcp\\server.py",
         "--demo"
       ],
-      "cwd": "C:\\path\\to\\systeminternals-mcp\\folder"
+      "cwd": "C:\\Users\\philip\\sauce\\systeminternals-mcp"
     },
 
     "systeminternals-mcp-http": {
