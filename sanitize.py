@@ -8,7 +8,7 @@ _UNSAFE = re.compile(r"[;&|<>`$]")
 
 
 def sanitize_args(args: str):
-    if not args:
+    if not args or args.strip() == "":
         return []
     if _UNSAFE.search(args):
         raise ValueError("unsafe characters detected in args")
@@ -39,4 +39,3 @@ def validate_args_with_schema(tool_name: str, args: str) -> None:
         validate(payload, schema)
     except ValidationError as e:
         raise ValueError(str(e))
-
