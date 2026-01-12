@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "systeminternals-mcp": {
+      "command": "python",
+      "args": [
+        "C:\\path\\to\\server_mcp.py"
+      ],
+      "cwd": "C:\\path\\to\\systeminternals-mcp\\folder"
+    },
+
+    "systeminternals-mcp-demo": {
+      "command": "python",
+      "args": [
+        "C:\\path\\to\\server.py",
+        "--demo"
+      ],
+      "cwd": "C:\\path\\to\\systeminternals-mcp\\folder"
+    },
+
+    "systeminternals-mcp-http": {
+      "url": "http://127.0.0.1:12345/mcp"
+    }
+  }
+}

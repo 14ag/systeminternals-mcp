@@ -105,9 +105,9 @@ Example — start the long-lived stdio MCP server from this repo (preferred for 
 
 ```json
 "systeminternals-mcp": {
-	"command": "C:\\Users\\philip\\sauce\\systeminternals-mcp\\.venv\\Scripts\\python.exe",
+	"command": "python",
 	"args": [
-		"C:\\Users\\philip\\sauce\\systeminternals-mcp\\server_mcp.py"
+		"C:\\path\\to\\the\\server_mcp.py"
 	]
 }
 ```
@@ -116,9 +116,9 @@ Example — demo/one-shot entry that runs `--demo` and prints JSON (useful for s
 
 ```json
 "systeminternals-mcp-demo": {
-	"command": "C:\\Users\\philip\\sauce\\systeminternals-mcp\\.venv\\Scripts\\python.exe",
+	"command": "python",
 	"args": [
-		"C:\\Users\\philip\\sauce\\systeminternals-mcp\\server.py",
+		"C:\\path\\to\\the\\server.py",
 		"--demo"
 	]
 }
