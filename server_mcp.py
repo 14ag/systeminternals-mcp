@@ -36,6 +36,7 @@ class _StdoutGuard:
 sys.stdout = _StdoutGuard(sys.stderr)
 
 from fastmcp import FastMCP
+import fastmcp as _fastmcp
 
 from server import load_config, load_binaries, run_tool_by_name
 
@@ -47,8 +48,12 @@ def make_tool_fn(mcp: FastMCP, entry: dict, cfg: dict):
 
     @mcp.tool(name=name, description=f"{entry.get('category')} tool: {entry.get('exe')}")
     async def _tool(args: str = "") -> Any:
-        res = await run_tool_by_name(name, args, cfg)
-        return res
+        try:
+            res = await run_tool_by_name(name, args, cfg)
+            return res
+        except Exception as ex:
+            LOG.exception("unhandled exception in tool %s", name)
+            return {"error": "internal_error", "detail": str(ex)}
 
     return _tool
 
@@ -80,8 +85,59 @@ def main():
     except Exception:
         pass
 
+    # Install simple signal handlers for graceful shutdown
+    import signal
+
+    def _term_handler(signum, frame):
+        LOG.info("received signal %s, exiting", signum)
+        try:
+            sys.exit(0)
+        except SystemExit:
+            raise
+
     try:
-        asyncio.run(mcp.run_stdio_async())
+        signal.signal(signal.SIGINT, _term_handler)
+        signal.signal(signal.SIGTERM, _term_handler)
+    except Exception:
+        # Some platforms may not allow signal handling; ignore
+        pass
+
+    async def _run_mcp(mcp_inst: FastMCP):
+        # Prefer explicit stdio server + run(handshake) if available in FastMCP.
+        stdio_server = getattr(_fastmcp, "stdio_server", None)
+        run_fn = getattr(mcp_inst, "run", None)
+        if stdio_server and run_fn:
+            try:
+                async with stdio_server() as (r, w):
+                    # Try to provide InitializationOptions if available
+                    Init = getattr(_fastmcp, "InitializationOptions", None)
+                    if Init:
+                        init_opts = Init(server_name="systeminternals-mcp")
+                        await run_fn(r, w, init_opts)
+                    else:
+                        await run_fn(r, w)
+                return
+            except Exception:
+                LOG.exception("explicit run(handshake) failed, falling back")
+
+        # Fallbacks
+        run_stdio = getattr(mcp_inst, "run_stdio_async", None)
+        if run_stdio:
+            await run_stdio()
+            return
+
+        if run_fn:
+            try:
+                # last resort: pass raw stdio buffers
+                await run_fn(sys.stdin.buffer, sys.stdout.buffer)
+                return
+            except Exception:
+                LOG.exception("mcp.run with raw buffers failed")
+
+        raise RuntimeError("No compatible FastMCP run method available")
+
+    try:
+        asyncio.run(_run_mcp(mcp))
     except KeyboardInterrupt:
         LOG.info("mcp server stopped")
 

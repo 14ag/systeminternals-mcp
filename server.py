@@ -81,28 +81,25 @@ async def run_tool_by_name(name: str, args: str, cfg: dict):
     bins = load_binaries()
     entry = next((b for b in bins if b.get("name") == name), None)
     if not entry:
-        return {"error": "tool not found", "name": name}
+        return {"error": "tool_not_found", "name": name}
 
     base = cfg.get("PATH_SYS") if entry.get("category") == "sysinternals" else cfg.get("PATH_X64")
     exe = entry.get("exe")
-    if base:
-        exe_path = os.path.join(base, exe)
-    else:
-        exe_path = exe
+    exe_path = os.path.join(base, exe) if base else exe
 
+    # Sanitize and validate args
     try:
         argv = sanitize_args(args)
     except ValueError as ex:
-        return {"error": "unsafe arguments", "detail": str(ex)}
+        return {"error": "unsafe_arguments", "detail": str(ex)}
 
-    # Per-tool schema validation (if present)
     try:
         from sanitize import validate_args_with_schema
         validate_args_with_schema(entry.get("name"), args)
     except ValueError as ex:
         return {"error": "args_schema_violation", "detail": str(ex)}
     except Exception:
-        pass
+        LOG.debug("schema validation skipped or failed for %s", entry.get("name"))
 
     # Safety check for destructive tools
     DESTRUCTIVE = {"sdelete", "sdelete64", "psexec", "psexec64", "pskill", "pskill64", "psservice", "psshutdown", "format", "cipher"}
@@ -110,7 +107,6 @@ async def run_tool_by_name(name: str, args: str, cfg: dict):
     is_destructive = any(d in exe_stem for d in DESTRUCTIVE) or name.lower() in DESTRUCTIVE
     allow_flag = cfg.get("ALLOW_DESTRUCTIVE", "0").lower() in ("1", "true", "yes")
     if is_destructive and not (allow_flag or "--confirm" in args or "confirm=yes" in args):
-        # If running interactively (tty), prompt the user for confirmation.
         try:
             if sys.stdin and sys.stdin.isatty():
                 prompt = f"Tool '{name}' appears destructive. Type 'yes' to confirm and run: "
@@ -118,7 +114,6 @@ async def run_tool_by_name(name: str, args: str, cfg: dict):
                 if resp.strip().lower() != "yes":
                     LOG.warning("user declined destructive tool %s", name)
                     return {"error": "destructive_tool_blocked", "detail": "User declined confirmation."}
-                # proceed
             else:
                 LOG.warning("blocked destructive tool invocation for %s (non-interactive)", name)
                 return {"error": "destructive_tool_blocked", "detail": "Tool is destructive. Run with `--confirm` or enable allow_destructive=true in config.ini."}
@@ -134,41 +129,51 @@ async def run_tool_by_name(name: str, args: str, cfg: dict):
         "category": entry.get("category"),
     })
 
-    # Auto flags for Sysinternals / NirSoft where appropriate
-    if entry.get("category") == "sysinternals":
-        argv = ["-accepteula", "-nobanner"] + argv
-        res = await run_command(exe_path, argv, timeout=30)
-    elif entry.get("category") == "nirsoft":
-        # prefer text output into a temp file, then read it back
-        if "/stext" not in args and "/sxml" not in args:
-            tf = tempfile.NamedTemporaryFile(delete=False, suffix=".txt")
-            tf_path = tf.name
-            tf.close()
-            argv = ["/stext", tf_path] + argv
+    # Execute with safety boundaries
+    try:
+        timeout = int(cfg.get("TIMEOUT", 30)) if cfg else 30
 
-            res = await run_command(exe_path, argv, timeout=30)
-            # if file produced, attach its contents
-            try:
-                with open(tf_path, "r", encoding="utf-8", errors="ignore") as f:
-                    body = f.read()
-                    res["stdout"] = (res.get("stdout", "") or "") + body
-            except Exception:
-                pass
-            finally:
+        if entry.get("category") == "sysinternals":
+            argv = ["-accepteula", "-nobanner"] + argv
+            res = await run_command(exe_path, argv, timeout=timeout)
+
+        elif entry.get("category") == "nirsoft":
+            # prefer text output into a temp file, then read it back
+            if "/stext" not in args and "/sxml" not in args:
+                tf = tempfile.NamedTemporaryFile(delete=False, suffix=".txt")
+                tf_path = tf.name
+                tf.close()
+                argv = ["/stext", tf_path] + argv
+
+                res = await run_command(exe_path, argv, timeout=timeout)
                 try:
-                    os.unlink(tf_path)
+                    with open(tf_path, "r", encoding="utf-8", errors="ignore") as f:
+                        body = f.read()
+                        res["stdout"] = (res.get("stdout", "") or "") + body
                 except Exception:
                     pass
+                finally:
+                    try:
+                        os.unlink(tf_path)
+                    except Exception:
+                        pass
+            else:
+                res = await run_command(exe_path, argv, timeout=timeout)
+
         else:
-            res = await run_command(exe_path, argv, timeout=30)
-    else:
-        res = await run_command(exe_path, argv, timeout=30)
+            res = await run_command(exe_path, argv, timeout=timeout)
+
+    except Exception as ex:
+        LOG.exception("error running tool %s", name)
+        return {"error": "internal_error", "detail": str(ex)}
 
     audit.info("result", extra={
         "tool": name,
         "exit_code": res.get("exit_code"),
         "timeout": res.get("timeout", False),
+        "success": res.get("success", False),
     })
+
     return res
 
 
