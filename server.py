@@ -17,9 +17,11 @@ if conf_path.exists():
     try:
         logging.config.fileConfig(conf_path, disable_existing_loggers=False)
     except Exception:
-        logging.basicConfig(level=logging.INFO)
+        import sys as _sys
+        logging.basicConfig(level=logging.INFO, stream=_sys.stderr)
 else:
-    logging.basicConfig(level=logging.INFO)
+    import sys as _sys
+    logging.basicConfig(level=logging.INFO, stream=_sys.stderr)
 
 
 def load_config(path: str = "config.ini") -> dict:
@@ -176,10 +178,10 @@ def main():
         name = sys.argv[2]
         args = " " .join(sys.argv[3:])
         result = asyncio.run(run_tool_by_name(name, args, cfg))
-        print(json.dumps(result, indent=2))
+        LOG.info(json.dumps(result, indent=2))
         return
 
-    print("Minimal MCP scaffold. Use `--demo <toolname> [args]` to run a tool.")
+    LOG.info("Minimal MCP scaffold. Use `--demo <toolname> [args]` to run a tool.")
 
 
 if __name__ == "__main__":

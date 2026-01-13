@@ -6,6 +6,9 @@ tags, destructive (bool).
 from pathlib import Path
 import json
 import sys
+import logging
+
+LOG = logging.getLogger("generate_binaries")
 
 
 DESTRUCTIVE_KEYWORDS = {"sdelete", "psexec", "pskill", "format", "cipher", "psshutdown"}
@@ -47,7 +50,7 @@ def build_entry(p: Path, root: Path) -> dict:
 def main():
     base = Path("binaries")
     if not base.exists() or not base.is_dir():
-        print("No `binaries` directory found.")
+        LOG.error("No `binaries` directory found.")
         sys.exit(1)
 
     out = []
@@ -57,7 +60,7 @@ def main():
 
     with open("binaries.json", "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=2)
-    print(f"Wrote binaries.json ({len(out)} entries)")
+    LOG.info("Wrote binaries.json (%d entries)", len(out))
 
 
 if __name__ == "__main__":

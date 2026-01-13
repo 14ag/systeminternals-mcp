@@ -1,8 +1,18 @@
+import os
+import sys
 import asyncio
 import json
 import logging
 from pathlib import Path
 from typing import Any
+
+# Ensure FastMCP does not print banners or log to stdout. Set env vars
+# before importing fastmcp so the library sees them during import/init.
+os.environ.setdefault("FASTMCP_NO_BANNER", "1")
+os.environ.setdefault("FASTMCP_LOG_STDOUT", "0")
+
+# Ensure logging defaults send output to stderr
+logging.basicConfig(level=logging.INFO, stream=sys.stderr)
 
 from fastmcp import FastMCP
 
@@ -40,7 +50,9 @@ def build_mcp(cfg_path: str = "config.ini", bins_path: str = "binaries.json") ->
 
 def main():
     mcp = build_mcp()
-    # Run stdio MCP server (blocking)
+    # Run stdio MCP server (blocking). Keep stdout pristine — FastMCP
+    # will use stdout for the MCP transport. Any human-readable logs
+    # should go to stderr (we already configured logging above).
     try:
         asyncio.run(mcp.run_stdio_async())
     except KeyboardInterrupt:

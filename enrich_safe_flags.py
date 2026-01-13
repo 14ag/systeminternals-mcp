@@ -8,7 +8,10 @@ import json
 import re
 import subprocess
 import sys
+import logging
 from pathlib import Path
+
+LOG = logging.getLogger("enrich_safe_flags")
 
 HELP_FLAGS = ["/?," ,"-?","--help","/help","-h","/?"]
 FLAG_RE = re.compile(r"(?P<flag>(?:/|-{1,2})[A-Za-z0-9][-A-Za-z0-9]*)")
@@ -75,7 +78,7 @@ def make_schema(tool_name: str, flags, allow_free: bool):
 def main():
     base = Path("binaries.json")
     if not base.exists():
-        print("binaries.json not found; run generate_binaries.py first", file=sys.stderr)
+        LOG.error("binaries.json not found; run generate_binaries.py first")
         sys.exit(1)
 
     entries = json.loads(base.read_text(encoding="utf-8"))
@@ -107,7 +110,7 @@ def main():
         count += 1
 
     base.write_text(json.dumps(entries, indent=2), encoding="utf-8")
-    print(f"Updated binaries.json and generated {count} schemas")
+    LOG.info("Updated binaries.json and generated %d schemas", count)
 
 
 if __name__ == "__main__":
